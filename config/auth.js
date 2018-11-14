@@ -9,8 +9,8 @@ module.exports = {
 	'googleAuth' : {
 		'clientID': '422518868827-qp8ira64ustigep769opa3cjf7cr4d8t.apps.googleusercontent.com',
 		'clientSecret': 'V_6xU2tVuY_a0GMhQKogbdOV',
-		//'callbackURL': 'https://cryptex.drishticet.org/auth/google/callback'
-		'callbackURL': 'http://localhost:3000/auth/google/callback'
+		'callbackURL': 'https://cryptex.drishticet.org/auth/google/callback'
+		//'callbackURL': 'http://localhost:3000/auth/google/callback'
 		//273552577815-rnveu5118tlt83rggegpk1jijeloe295.apps.googleusercontent.com
 		//client id
 		
