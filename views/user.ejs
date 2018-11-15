@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet">
 
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/bootstrap/css/bootstrap.min.css">
@@ -17,16 +17,16 @@
 	<link rel="stylesheet" type="text/css" href="/landing/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/animate/animate.css">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/landing/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/landing/css/util.css">						
+	<link rel="stylesheet" type="text/css" href="/landing/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/landing/css/main2.css">
 <!--===============================================================================================-->
 
@@ -61,16 +61,18 @@
 				  </div>
 				</div>
 			  </nav>
-    
+
     <% var k=user.unlocked %>
-    
+
     <div class="container" >
-    <div class="row">  
+    <div class="row">
+			<div class="col-md-2">
         <div class="card" style="width: 18rem; margin-top:2em;">
             <div class="card-body">
               <h5 class="card-title">Level 0</h5>
               <a href="/level0" class="btn btn-primary">Go to Level</a>
             </div>
+					</div>
           </div>
       <%for (var i=1;i<=k;i++){%>
       <div class="col-md-2">

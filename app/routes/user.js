@@ -10,19 +10,6 @@ module.exports = function(app, passport){
 	app.get('/hackerman',function(req,res){
 		res.render('hackerman.ejs')
 	})
-	// app.get('/login', function(req, res){
-	// 	res.render('login.ejs', { message: req.flash('loginMessage') });
-	// });
-	// app.post('/login', passport.authenticate('local-login', {
-	// 	successRedirect: '/profile',
-	// 	failureRedirect: '/login',
-	// 	failureFlash: true
-	// }));
-
-
-	//  app.get('/profile', isLoggedIn, function(req, res){
- 	// res.render('user.ejs', { user: req.user });
-	// });
 
 	app.get('/completeProfile', isLoggedIn, function(req, res){
 		console.log(req.user);
