@@ -69,7 +69,7 @@ if(req.user.user_access != -1) {
   }
 }
 else {
-res.send("banned")
+res.redirect('/banned')
 }
 
 
