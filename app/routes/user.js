@@ -17,14 +17,14 @@ module.exports = function(app, passport){
 
 	app.get('/completeProfile', isLoggedIn, function(req, res){
 		console.log(req.user);
-		if(req.user.college === "None")
+		if(req.user.college === "None" || req.user.college === null)
 				res.render('details.ejs',{ user:req.user });
 			else
 		res.redirect('/levels')
  		});
 
  	app.post('/updateCollege',(req,res)=>{
-		var collegename = "None";
+		var collegename = req.body.college;
 		//res.send(collegename);
 		console.log("hello"+req.body.college);
 		//console.log(JSON.stringify(req.user));
