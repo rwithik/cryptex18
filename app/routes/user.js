@@ -27,7 +27,7 @@ module.exports = function(app, passport){
 		var collegename = req.body.college;
 		//res.send(collegename);
 		//console.log(req.user);
-		User.findOneAndUpdate({'auth.id': req.user.auth.id}, { college: collegename , phone_number:req.body.phone }, function(err,doc){
+		User.findOneAndUpdate({"auth.id": req.user.auth.id}, { "college": collegename , "phone_number":req.body.phone }, function(err,doc){
 			if(err)
 				return err;
 		})
