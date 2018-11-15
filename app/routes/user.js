@@ -70,7 +70,10 @@ app.get('/leaderboard',isLoggedIn,function(req,res){
 app.get('/rules', function(req, res){
 		res.render('rules.ejs');
 		});
-	
+
+app.get('/profile', function(req, res){
+		res.render('profile.ejs');
+		});
 
 app.get('/shanku',isLoggedIn,(req,res)=>{
 	if(req.user.user_access === 1)
