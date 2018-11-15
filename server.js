@@ -22,6 +22,7 @@ require('./config/passport')(passport);
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 app.use(session({
   key: 'sessid',
   secret: 'sessionissecret',
