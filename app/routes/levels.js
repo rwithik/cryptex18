@@ -50,6 +50,22 @@ app.get('/level11',isLoggedIn,function(req,res){
 isValid(req,res,11)
 
 });
+app.get('/level12',isLoggedIn,function(req,res){
+isValid(req,res,12)
+
+});
+app.get('/level13',isLoggedIn,function(req,res){
+isValid(req,res,13)
+
+});
+app.get('/level14',isLoggedIn,function(req,res){
+isValid(req,res,14)
+
+});
+app.get('/level15',isLoggedIn,function(req,res){
+isValid(req,res,15)
+
+});
 
 }
 function isLoggedIn(req, res, next) {

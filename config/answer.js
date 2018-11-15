@@ -12,6 +12,9 @@ module.exports= {
     'beammeup',
     'moonpiebazinga',
     'practicalmagic',
-    'thewalkingdead'
+    'thewalkingdead',
+    'pearsonhardman',
+    'qwerty',
+    'centralperk',
   ]
 }
