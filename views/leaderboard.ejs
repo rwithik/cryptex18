@@ -70,8 +70,8 @@
 					<table style="background-color: white;">
 						<thead>
 							<tr class="table100-head">
-								<th class="column2">Name</th>
-								<th class="column3">Level</th>
+								<th class="column1">Name</th>
+								<th class="column2">Level</th>
 							</tr>
 						</thead>
 
@@ -79,8 +79,8 @@
 								<% if(doc[i].user_access === 0) { %>
 						<tbody>
 								<tr>
-									<td class="column2"> <%= doc[i].auth.name %></td>
-									<td class="column3"> <%= doc[i].unlocked %></td>
+									<td class="column1"> <%= doc[i].auth.name %></td>
+									<td class="column2"> <%= doc[i].unlocked %></td>
 								</tr>
 						</tbody>
 						<% }} %>
