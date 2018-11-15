@@ -67,6 +67,11 @@ app.get('/leaderboard',isLoggedIn,function(req,res){
 	})
 })
 
+app.get('/rules', function(req, res){
+		res.redirect('/rules');
+		});
+	
+
 app.get('/shanku',isLoggedIn,(req,res)=>{
 	if(req.user.user_access === 1)
 		{

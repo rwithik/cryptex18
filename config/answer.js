@@ -9,6 +9,9 @@ module.exports= {
     'teslaquila',
     'vaticancameos',
     'vatnajokull',
-    'beammeup'
+    'beammeup',
+    'moonpiebazinga',
+    'practicalmagic',
+    'thewalkingdead'
   ]
 }
