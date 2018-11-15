@@ -265,10 +265,10 @@ tbody tr:hover {
     top: 0;
   }
   table tbody tr td:nth-child(1):before {
-    content: "Rank";
+    content: "Name";
   }
   table tbody tr td:nth-child(2):before {
-    content: "Name";
+    content: "Level";
   }
   table tbody tr td:nth-child(3):before {
     content: "Level";
