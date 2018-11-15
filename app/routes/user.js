@@ -17,7 +17,7 @@ module.exports = function(app, passport){
 
 	app.get('/completeProfile', isLoggedIn, function(req, res){
 		console.log(req.user);
-		if(req.user.college === "None" || req.user.college === null)
+		if(req.user.college === "None")
 				res.render('details.ejs',{ user:req.user });
 			else
 		res.redirect('/levels')
