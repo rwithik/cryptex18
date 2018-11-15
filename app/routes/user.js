@@ -110,6 +110,10 @@ app.get('/mathew',isLoggedIn,(req,res)=>{
 		}
 })
 
+app.get('/hackerman',function(req,res){
+	res.render('hackerman.ejs')
+})
+
 	app.get('/checkAnswer',function(req,res){
 		var ans= req.query.answers;
 		var key= req.user.present_level;
@@ -117,7 +121,7 @@ app.get('/mathew',isLoggedIn,(req,res)=>{
 			//console.log("Here")
 
 			 if(req.user.present_level === req.user.unlocked)
-			  	{ 				  
+			  	{
 					  var date = new Date();
 						User.findOneAndUpdate({'auth.id': req.user.auth.id}, {unlocked: req.user.unlocked+1,present_level: req.user.present_level+1, timestamp: date}, function(err,docs){
 							if(err)

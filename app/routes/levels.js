@@ -65,10 +65,7 @@ if(req.user.user_access != -1) {
     res.render(red);
   }
   else {
-    // res.send('foul!!!!')
-    var kooi = '../views/hackerman';
-    res.render('kooi');
-
+    res.redirect('/hackerman')
   }
 }
 else {
