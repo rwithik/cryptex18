@@ -7,7 +7,9 @@ module.exports = function(app, passport){
 		res.render('index.ejs');
 
 	});
-
+	app.get('/hackerman',function(req,res){
+		res.render('hackerman.ejs')
+	})
 	// app.get('/login', function(req, res){
 	// 	res.render('login.ejs', { message: req.flash('loginMessage') });
 	// });
@@ -108,10 +110,6 @@ app.get('/mathew',isLoggedIn,(req,res)=>{
 		else {
 			res.send('404!')
 		}
-})
-
-app.get('/hackerman',function(req,res){
-	res.render('hackerman.ejs')
 })
 
 	app.get('/checkAnswer',function(req,res){
