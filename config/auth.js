@@ -13,7 +13,7 @@ module.exports = {
 		//'callbackURL': 'http://localhost:3000/auth/google/callback'
 		//273552577815-rnveu5118tlt83rggegpk1jijeloe295.apps.googleusercontent.com
 		//client id
-		
+
 
 
 	}}
