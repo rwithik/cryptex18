@@ -66,7 +66,8 @@ if(req.user.user_access != -1) {
   }
   else {
     // res.send('foul!!!!')
-    res.redirect('/hackerman.ejs');
+    var kooi = '../views/hackerman';
+    res.render('kooi');
 
   }
 }
