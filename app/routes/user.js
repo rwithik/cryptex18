@@ -52,8 +52,8 @@ module.exports = function(app, passport){
 
 
 	app.get('/logout', function(req, res){
-req.logout();
-	 res.redirect('/');
+	req.logout();
+	res.redirect('/');
 	});
 
 	app.get('/levels',isLoggedIn,function(req,res){
