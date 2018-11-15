@@ -68,7 +68,7 @@ app.get('/leaderboard',isLoggedIn,function(req,res){
 })
 
 app.get('/rules', function(req, res){
-		res.redirect('/rules');
+		res.render('rules.ejs');
 		});
 	
 
