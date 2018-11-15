@@ -10,6 +10,10 @@ module.exports = function(app, passport){
 	app.get('/hackerman',function(req,res){
 		res.render('hackerman.ejs')
 	})
+
+	app.get('/banned',function(req,res){
+		res.render('banned.ejs')
+	})
 	// app.get('/login', function(req, res){
 	// 	res.render('login.ejs', { message: req.flash('loginMessage') });
 	// });
