@@ -24,7 +24,7 @@ module.exports = function(app, passport){
  		});
 
  	app.post('/updateCollege',(req,res)=>{
-		var collegename = req.body.college;
+		var collegename = "None";
 		//res.send(collegename);
 		console.log("hello"+req.body.college);
 		//console.log(JSON.stringify(req.user));
