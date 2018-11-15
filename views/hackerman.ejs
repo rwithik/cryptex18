@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
+
+
 <html lang="en">
-<head>
-	<title>CRYPTEX 3.0</title>
+  <head>
+    	<title>CRYPTEX 3.0</title>
 	<meta charset="UTF-8">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,12 +41,6 @@
 <!-- Bootstrap CSS File -->
 <link href="/Navbar/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Libraries CSS Files -->
-<!-- <link href="/Navbar/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="/Navbar/lib/fancybox/fancybox.css" rel="stylesheet"> -->
-
-<!-- Main Stylesheet File -->
-<!-- <link href="/Navbar/css/style.css" rel="stylesheet"> -->
 
  <link rel="prefetch" href="/Navbar/img/zoom.png">
 
@@ -56,69 +52,100 @@
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		  <div class="navbar-nav navbar-right">
-			<a class="nav-item nav-link active" href="https://www.facebook.com/drishticryptex" style="font-size: 20px;">Clues <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="/leaderboard.ejs" style="font-size: 20px;">Leaderboard</a>
+		  <div class="navbar-nav navbar-right">   
+          <a class="nav-item nav-link" href="https://www.facebook.com/drishticryptex" style="font-size: 20px;">Clues</a>
 
-		
-		</div>
+			<a class="nav-item nav-link" href="/leaderboard" style="font-size: 20px;">Scoreboard</a>
+      <a class="nav-item nav-link" href="/levels" style="font-size: 20px;">Challenges</a> <span class="sr-only">(current)</span></a>
+
+      <a class="nav-item nav-link" href="/logout" style="font-size: 20px;">Logout</a>
+		  </div>
 		</div>
 	  </nav>
-	<!-- <div class="dlogo vertical1">
-		<img src="/image/drishti.png" alt="DRISHTI" width="25%" height="auto">  
-	</div> -->
-	<div class="container-login100">
-		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-			<div class="text-center p-t-57 p-b-20">
-			<h1 style="margin-top:2.7em; font-family: 'Luckiest Guy', cursive;">Cryptex 3.0</h1>
 
-			<div class="text-center p-t-57 p-b-20">
-				<span class="txt1">
-				</span>
-			</div>
-			<a href="/auth/google"><button type="button" class="btn btn-outline-primary btn-lg"><img src="/landing/images/icons/icon-google.png" style="margin-right: 0.5em;">Sign In with Google</button></a>
+    <link rel="stylesheet" href="css/styles.css">
+    <style type="text/css">
+    @media screen and (min-width: 480px) {
+          #question {
+              width: 90%;
+              height: 100%;
+              margin-top: 20vh;
+              margin-bottom: 35vh;
+          }
+           #qimg{
+        margin-top: 7vh;
+      }
+      #ans{
+        margin-top: 7vh;
+      }
 
-				<!--<div class="flex-c p-b-112">
-					<a href="#" class="g-signin2" data-onsuccess="onSignIn">
-						<img src="/landing/images/icons/icon-google.png" alt="GOOGLE">
-					</a>
-				</div>-->
-				<div class="flex-c p-b-112">
-					
-				</a>
-				</div>
-			<script>
-					function onSignIn(googleUser) {
-					var profile = googleUser.getBasicProfile();
-					console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-					console.log('Name: ' + profile.getName());
-					console.log('Image URL: ' + profile.getImageUrl());
-					console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-				  }
-			</script>
-		</div>
-	</div>
-	
-	
+      }
+       #question
+      {
+        width:90%;
+         height:80%;
+         margin-top: 10vh;
+        margin-bottom: 5vh;
+      }
+      #qimg{
+        margin-top: 2vh;
+      }
+      #ans{
+        margin-top: 2.5vh;
+        width:65%;
+      }
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="/landing/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/vendor/bootstrap/js/popper.js"></script>
-	<script src="/landing/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/vendor/daterangepicker/moment.min.js"></script>
-	<script src="/landing/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="/landing/js/main.js"></script>
 
-</body>
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: grey;
+        text-align: right;
+        padding-right: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+ 
+        </div>
+      </div>
+
+   <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-sm-12" align="center"  id="qimg">
+          <img src="/LvlImg/hackerman.jpeg"  id="question">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+        <div class="row" >
+        <div class="col-md-3"></div>
+        <div class="col-md-6 col-sm-12" align="center">
+          <main class="mdl-layout__content">
+
+
+
+
+      </div>
+      <!--<div class="mdl-card__actions ">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect  " style="margin-top: -50px"><a style="color:white">GO</a></button>
+      </div>-->
+
+  </main>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+
+  </body>
 </html>
