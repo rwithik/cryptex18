@@ -42,6 +42,14 @@ app.get('/level9',isLoggedIn,function(req,res){
 isValid(req,res,9)
 
 });
+app.get('/level10',isLoggedIn,function(req,res){
+isValid(req,res,10)
+
+});
+app.get('/level11',isLoggedIn,function(req,res){
+isValid(req,res,11)
+
+});
 
 }
 function isLoggedIn(req, res, next) {
