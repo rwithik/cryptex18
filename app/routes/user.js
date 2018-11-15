@@ -26,8 +26,8 @@ module.exports = function(app, passport){
  	app.post('/updateCollege',(req,res)=>{
 		var collegename = req.body.college;
 		//res.send(collegename);
-		console.log("hello"+req.body);
-		console.log(JSON.stringify(req.user));
+		console.log("hello"+req.body.college);
+		//console.log(JSON.stringify(req.user));
 		User.findOneAndUpdate({"auth.id": req.user.auth.id}, { $set:{"college": collegename , "phone_number":req.body.phone }},{new:true}, function(err,doc){
 			if(err)
 				return err;
