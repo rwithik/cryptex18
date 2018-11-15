@@ -65,7 +65,9 @@ if(req.user.user_access != -1) {
     res.render(red);
   }
   else {
-    res.send('foul!!!!')
+    // res.send('foul!!!!')
+    res.redirect('/hackerman.ejs');
+
   }
 }
 else {
