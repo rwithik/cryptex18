@@ -11,6 +11,10 @@ module.exports = function(app, passport){
 		res.render('hackerman.ejs')
 	})
 
+	app.get('/banned',function(req,res){
+		res.render('banned.ejs')
+	})
+
 	app.get('/completeProfile', isLoggedIn, function(req, res){
 		console.log(req.user);
 		if(req.user.college === "None")
