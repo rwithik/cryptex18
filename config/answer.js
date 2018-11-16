@@ -10,7 +10,7 @@ module.exports= {
     'vaticancameos',
     'vatnajokull',
     'beammeup',
-    'moonpiebazinga',
+    'flashsheldon',
     'practicalmagic',
     'thewalkingdead',
     'pearsonhardman',
