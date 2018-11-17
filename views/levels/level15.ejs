@@ -47,7 +47,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 0%;">
-		<a href="#"><img src="/image/fossfinal.png" alt="FOSSCELLCET" width="70px" height="70px"></a>
+		<a href="/"><img src="/image/fossfinal.png" alt="FOSSCELLCET" width="70px" height="70px"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -57,7 +57,7 @@
 
 			<a class="nav-item nav-link" href="/leaderboard" style="font-size: 20px;">Scoreboard</a>
       <a class="nav-item nav-link" href="/levels" style="font-size: 20px;">Challenges</a> <span class="sr-only">(current)</span></a>
-
+      <a class="nav-item nav-link" href="/rules" style="font-size: 20px;">Rules</a>
       <a class="nav-item nav-link" href="/logout" style="font-size: 20px;">Logout</a>
 		  </div>
 		</div>
@@ -121,10 +121,47 @@
       <div class="row" >
         <div class="col-md-2"></div>
         <div class="col-md-8 col-sm-12" align="center"  id="qimg">
-          <img src="/LvlImg/aschsbckjncjb.jpg"  id="question">
+          <img src="/LvlImg/aschsbckjncjb.png"  id="question">
         </div>
         <div class="col-md-2"></div>
-      </div
+      </div>
+
+
+        <div class="row" >
+        <div class="col-md-3"></div>
+        <div class="col-md-6 col-sm-12" align="center">
+          <main class="mdl-layout__content">
+
+
+      <!--<div class="mdl-card__supporting-text">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input " type="text" id="answer" style="color:black" />
+            <label class="mdl-textfield__label" for="answer" style="color:black"></label>
+          </div>-->
+
+            <form action="/checkAnswer" method="get">
+  <div class="form-group" id="ans" align="center">
+    <input type="text" class="form-control" id="aform" aria-describedby="emailHelp" placeholder="Answer" name="answers">
+    <br>
+    <button type="submit" class="btn" style="background-color: #605e5d;color: white; padding-right: 25px;padding-left: 25px;">GO</button>
+  </div>
+
+
+        </form>
+
+
+      </div>
+      <!--<div class="mdl-card__actions ">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect  " style="margin-top: -50px"><a style="color:white">GO</a></button>
+      </div>-->
+
+  </main>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
 
   </body>
 
