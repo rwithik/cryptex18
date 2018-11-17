@@ -16,5 +16,9 @@ module.exports= {
     'pearsonhardman',
     'qwerty',
     'centralperk',
-  ]
+    'arcadefire',
+    'theseviolentdelightshaveviolentends',
+    'walterhartwellwhite',
+    'montauk',
+    'ronaldoluisnazariodelelima',  ]
 }
