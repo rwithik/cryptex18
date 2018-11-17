@@ -66,6 +66,34 @@ app.get('/level15',isLoggedIn,function(req,res){
 isValid(req,res,15)
 
 });
+app.get('/level16',isLoggedIn,function(req,res){
+  isValid(req,res,16)
+  
+  });
+  
+
+  app.get('/level17',isLoggedIn,function(req,res){
+    isValid(req,res,17)
+    
+    });
+    
+    app.get('/level18',isLoggedIn,function(req,res){
+      isValid(req,res,18)
+      
+      });
+      app.get('/level19',isLoggedIn,function(req,res){
+        isValid(req,res,19)
+        
+        });
+        app.get('/level20',isLoggedIn,function(req,res){
+          isValid(req,res,20)
+          
+          });
+          app.get('/level21',isLoggedIn,function(req,res){
+            isValid(req,res,21)
+            
+            });
+                                    
 
 }
 function isLoggedIn(req, res, next) {
