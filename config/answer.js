@@ -18,7 +18,7 @@ module.exports= {
     'centralperk',
     'arcadefire',
     'theseviolentdelightshaveviolentends',
-    'walterhartwellwhite',
+    'bluemeth',
     'montauk',
     'ronaldoluisnazariodelelima',
     'beyourselfbutmakesureyoufitin',
