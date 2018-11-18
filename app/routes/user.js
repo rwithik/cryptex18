@@ -56,10 +56,10 @@ module.exports = function(app, passport){
 	res.redirect('/');
 	});
 
-	app.get('/levels',isLoggedIn,function(req,res){
-
-	res.render('user.ejs',{ user:req.user })
-	});
+	// app.get('/levels',isLoggedIn,function(req,res){
+	//
+	// res.render('user.ejs',{ user:req.user })
+	// });
 
 app.get('/leaderboard',function(req,res){
 	User.find({}).sort({'unlocked': -1, 'timestamp': 1}).exec(function(err, docs){
@@ -71,9 +71,9 @@ app.get('/rules', function(req, res){
 		res.render('rules.ejs');
 		});
 
-app.get('/profile', function(req, res){
-		res.render('profile.ejs');
-		});
+// app.get('/profile', function(req, res){
+// 		res.render('profile.ejs');
+// 		});
 
 app.get('/shanku',isLoggedIn,(req,res)=>{
 	if(req.user.user_access === 1)
