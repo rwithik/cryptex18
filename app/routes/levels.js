@@ -1,124 +1,93 @@
 var User = require('../models/user');
 var level_global;
 module.exports = function(app, passport){
-
+  
 app.get('/level0',isLoggedIn,function(req,res){
   isValid(req,res,0)
 })
-
 app.get('/level1',isLoggedIn,function(req,res){
   isValid(req,res,1)
 });
-
 app.get('/level2',isLoggedIn,function(req,res){
 isValid(req,res,2)
-
 });
 app.get('/level3',isLoggedIn,function(req,res){
 isValid(req,res,3)
-
 });
 app.get('/level4',isLoggedIn,function(req,res){
 isValid(req,res,4)
-
 });
 app.get('/level5',isLoggedIn,function(req,res){
 isValid(req,res,5)
-
 });
 app.get('/level6',isLoggedIn,function(req,res){
 isValid(req,res,6)
-
 });
 app.get('/level7',isLoggedIn,function(req,res){
 isValid(req,res,7)
-
 });
 app.get('/level8',isLoggedIn,function(req,res){
 isValid(req,res,8)
-
 });
 app.get('/level9',isLoggedIn,function(req,res){
 isValid(req,res,9)
-
 });
 app.get('/level10',isLoggedIn,function(req,res){
 isValid(req,res,10)
-
 });
 app.get('/level11',isLoggedIn,function(req,res){
 isValid(req,res,11)
-
 });
 app.get('/level12',isLoggedIn,function(req,res){
 isValid(req,res,12)
-
 });
 app.get('/level13',isLoggedIn,function(req,res){
 isValid(req,res,13)
-
 });
 app.get('/level14',isLoggedIn,function(req,res){
 isValid(req,res,14)
-
 });
 app.get('/level15',isLoggedIn,function(req,res){
 isValid(req,res,15)
-
 });
 app.get('/level16',isLoggedIn,function(req,res){
-  isValid(req,res,16)
-  
-  });
-  
+isValid(req,res,16)
+});
+app.get('/level17',isLoggedIn,function(req,res){
+isValid(req,res,17)
+});
+app.get('/level18',isLoggedIn,function(req,res){
+isValid(req,res,18)
+});
+app.get('/level19',isLoggedIn,function(req,res){
+isValid(req,res,19)
+});
+app.get('/level20',isLoggedIn,function(req,res){
+isValid(req,res,20)
+});
+app.get('/level21',isLoggedIn,function(req,res){
+isValid(req,res,21)
+});
+app.get('/level22',isLoggedIn,function(req,res){
+isValid(req,res,22)
+});
+app.get('/level23',isLoggedIn,function(req,res){
+isValid(req,res,23)
+});
+app.get('/level24',isLoggedIn,function(req,res){
+isValid(req,res,24)
+});
+app.get('/level25',isLoggedIn,function(req,res){
+isValid(req,res,25)
+});
+app.get('/level26',isLoggedIn,function(req,res){
+isValid(req,res,26)
+});
+app.get('/level27',isLoggedIn,function(req,res){
+isValid(req,res,27)
+});
 
-  app.get('/level17',isLoggedIn,function(req,res){
-    isValid(req,res,17)
-    
-    });
-    
-    app.get('/level18',isLoggedIn,function(req,res){
-      isValid(req,res,18)
-      
-      });
-      app.get('/level19',isLoggedIn,function(req,res){
-        isValid(req,res,19)
-        
-        });
-        app.get('/level20',isLoggedIn,function(req,res){
-          isValid(req,res,20)
-          
-          });
-          app.get('/level21',isLoggedIn,function(req,res){
-            isValid(req,res,21)
-            
-            });
-            app.get('/level22',isLoggedIn,function(req,res){
-              isValid(req,res,22)
-              
-              });
-              app.get('/level23',isLoggedIn,function(req,res){
-                isValid(req,res,23)
-                
-                });
-                app.get('/level24',isLoggedIn,function(req,res){
-                  isValid(req,res,24)
-                  
-                  });
-                  app.get('/level25',isLoggedIn,function(req,res){
-                    isValid(req,res,25)
-                    
-                    });
-                    app.get('/level26',isLoggedIn,function(req,res){
-                      isValid(req,res,26)
-                      
-                      });
-                      app.get('/level27',isLoggedIn,function(req,res){
-                        isValid(req,res,27)
-                        
-                        });
-                                                             
-                                    
+
 
 }
 function isLoggedIn(req, res, next) {
