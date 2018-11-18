@@ -61,7 +61,7 @@ module.exports = function(app, passport){
 	res.render('user.ejs',{ user:req.user })
 	});
 
-app.get('/leaderboard',isLoggedIn,function(req,res){
+app.get('/leaderboard',function(req,res){
 	User.find({}).sort({'unlocked': -1, 'timestamp': 1}).exec(function(err, docs){
 		res.render('leaderboard.ejs',{ doc:docs , user:req.user })
 	})
