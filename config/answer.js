@@ -20,5 +20,12 @@ module.exports= {
     'theseviolentdelightshaveviolentends',
     'walterhartwellwhite',
     'montauk',
-    'ronaldoluisnazariodelelima',  ]
+    'ronaldoluisnazariodelelima',
+    'beyourselfbutmakesureyoufitin',
+    'walterhartwellwhite',
+    'andyhargrove',
+    'thomascranmer',
+    'harveybernardmilk',
+    'pennsylvaniaavenue',
+  ]
 }

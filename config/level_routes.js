@@ -21,7 +21,12 @@ module.exports={
     '/level18',
     '/level19',
     '/level20',
-    '/level21',
+    '/level22',
+    '/level23',
+    '/level24',
+    '/level25',
+    '/level26',
+    '/level27',
     '/leaderboard'
   ]
 }

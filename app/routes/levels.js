@@ -93,6 +93,31 @@ app.get('/level16',isLoggedIn,function(req,res){
             isValid(req,res,21)
             
             });
+            app.get('/level22',isLoggedIn,function(req,res){
+              isValid(req,res,22)
+              
+              });
+              app.get('/level23',isLoggedIn,function(req,res){
+                isValid(req,res,23)
+                
+                });
+                app.get('/level24',isLoggedIn,function(req,res){
+                  isValid(req,res,24)
+                  
+                  });
+                  app.get('/level25',isLoggedIn,function(req,res){
+                    isValid(req,res,25)
+                    
+                    });
+                    app.get('/level26',isLoggedIn,function(req,res){
+                      isValid(req,res,26)
+                      
+                      });
+                      app.get('/level27',isLoggedIn,function(req,res){
+                        isValid(req,res,27)
+                        
+                        });
+                                                             
                                     
 
 }
